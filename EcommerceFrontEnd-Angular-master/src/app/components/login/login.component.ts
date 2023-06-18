@@ -13,6 +13,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 export class LoginComponent implements OnInit {
 
   loginForm:FormGroup;
+  username: string;
 
   constructor(private formBuilder:FormBuilder, private loginService:LoginService,private router:Router,private toastr:ToastrService) { 
     let loginFormControls = {
