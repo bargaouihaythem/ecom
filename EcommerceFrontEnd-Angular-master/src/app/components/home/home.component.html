@@ -1,11 +1,32 @@
-<div class="container">
-  <div style="display: block">
-    <canvas baseChart
-            [datasets]="barChartData"
-            [labels]="barChartLabels"
-            [options]="barChartOptions"
-            [legend]="barChartLegend"
-            [chartType]="barChartType">
-    </canvas>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-container {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="assets/images/store.jpg">
   </div>
-</div>
+</body>
+</html>
